@@ -14,7 +14,14 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Submit a Link", addLink_path %></li> 
+          <li><%= link_to "About", addLink_path %></li>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <%= link_to "Submit a Link", links_path, class: "btn btn-primary btn-md"%>
+            </div>
+          </form>
+
+
 
       </ul>
     </div><!-- /.navbar-collapse -->

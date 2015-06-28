@@ -1,0 +1,24 @@
+<div class="row">
+    <div class = "col-md-12">
+      <div class ="panel panel-default">
+        <div class="panel-body">
+          <p id="notice"><%= notice %></p>
+
+            <h1>Links Submitted</h1>
+
+
+            <% @links.each do |link| %>
+            <div>
+              <p><strong><%= link_to link.Title, link.URL %></strong>. <%= link.Description %></td>
+              <p><%= link.Submitted %></p>
+              <p><%= link_to 'Show', link %> | <%= link_to 'Edit', edit_link_path(link) %> | <%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+            </div>
+            <% end %>
+        </div>
+      </div>
+    </div>
+
+  <br>
+
+  <%= link_to 'New Link', new_link_path %>
+</div>

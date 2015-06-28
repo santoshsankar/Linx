@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :links
+
   root 'pages#home'
   get 'addLink' => 'pages#addLink'
   get 'linksCompiled' => 'pages#linksCompiled'
