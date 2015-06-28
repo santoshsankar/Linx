@@ -4,4 +4,8 @@ class PagesController < ApplicationController
   
   def addLink
   end
+
+  def linksCompiled
+  end
+
 end
